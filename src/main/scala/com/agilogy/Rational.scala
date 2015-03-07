@@ -3,7 +3,6 @@ package com.agilogy
 case class Rational(numerador: Int, denominador:Int = 1) {
   
   def add(r: Rational) = {
-    println("Temp rational: "+Rational(numerador*r.denominador+r.numerador*denominador, r.denominador*denominador))
     reduceRational(Rational(numerador*r.denominador+r.numerador*denominador, r.denominador*denominador))
   }
   
